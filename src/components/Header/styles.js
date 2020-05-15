@@ -21,6 +21,10 @@ export const Container = styled.div`
       font-weight: bold;
       color: #333;
       text-transform: uppercase;
+
+      @media (max-width: 900px) {
+        display: none;
+      }
     }
   }
 
