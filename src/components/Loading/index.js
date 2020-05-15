@@ -1,11 +1,16 @@
 import React from 'react';
-
-import { Container, LoadingAnimation } from './styles';
+import TopBarProgress from 'react-topbar-progress-indicator';
 
 export default function Loading() {
-  return (
-    <Container>
-      <LoadingAnimation />
-    </Container>
-  );
+  TopBarProgress.config({
+    barColors: {
+      '0': '#3C6EE6',
+      '0.5': '#4D52FC',
+      '0.7': '#643CE6',
+      '1': '#7159c1',
+    },
+    shadowBlur: 5,
+  });
+
+  return <TopBarProgress />;
 }
