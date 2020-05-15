@@ -115,7 +115,7 @@ export default function CreateCalled() {
         <ContainerBackgroundModal>
           <ContainerModal>
             <BtnClose size={23} color="#7159c1" onClick={handleCloseForm} />
-            <span>Atualizar dados da tratativa</span>
+            <span>Atualizar registro</span>
             <form onSubmit={handleFormSubmit}>
               <input
                 name="anatelprotocol"
