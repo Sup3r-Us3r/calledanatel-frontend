@@ -42,6 +42,8 @@ export const Table = styled.table`
   thead {
     tr {
       th {
+        position: sticky;
+        top: 0;
         text-align: left;
         font-size: 12px;
         line-height: 16px;
