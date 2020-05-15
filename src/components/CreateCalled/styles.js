@@ -23,6 +23,7 @@ export const ContainerButton = styled.div`
 `;
 
 export const ContainerBackgroundModal = styled.div`
+  z-index: 9999;
   margin: auto;
   position: absolute;
   top: 0;
@@ -54,6 +55,11 @@ export const ContainerModal = styled.div`
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
   animation: ${downModal} 1s ease-in-out;
+
+  @media (max-width: 330px) {
+    max-height: 100%;
+    max-width: 100%;
+  }
 
   svg {
     position: absolute;
