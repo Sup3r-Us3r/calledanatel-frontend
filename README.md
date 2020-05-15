@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="Called Anatel" src="https://raw.githubusercontent.com/Sup3r-Us3r/setbreaks/master/public/favicon.ico" width="200px" />
+  <img alt="Called Anatel" src="https://raw.githubusercontent.com/Sup3r-Us3r/calledanatel-frontend/master/public/favicon.ico" width="200px" />
 </h1>
 
 <h3 align="center">Check anatel protocols in real time</h3>
