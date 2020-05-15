@@ -32,13 +32,4 @@ export default createGlobalStyle`
     -moz-appearance: none;
     appearance: none;
   }
-
-  /* COGOTOAST CUSTOM STYLES */
-  /** COLORS
-    background: #7159c1;
-    background: #3498db;
-    background: #F23838;
-    background: #FEE703;
-  */
-  /* .ct-toast-success {} */
 `;
