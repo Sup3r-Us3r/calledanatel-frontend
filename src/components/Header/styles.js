@@ -31,6 +31,7 @@ export const Container = styled.div`
   section {
     display: flex;
     justify-content: space-between;
-    width: 65px;
+    align-items: center;
+    width: 95px;
   }
 `;
