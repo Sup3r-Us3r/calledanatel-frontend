@@ -2,6 +2,7 @@ import React from 'react';
 
 import CreateCalled from '../CreateCalled';
 import UpdateCalled from '../UpdateCalled';
+import ShowUsersOnline from '../ShowUsersOnline';
 import Logout from '../Logout';
 
 import anatelLogo from '../../assets/anatelLogo.svg';
@@ -16,6 +17,7 @@ export default function Header() {
         <header>Chamados da Anatel sendo verificados em tempo real</header>
       </div>
       <section>
+        <ShowUsersOnline />
         <CreateCalled />
         <UpdateCalled />
         <Logout />
