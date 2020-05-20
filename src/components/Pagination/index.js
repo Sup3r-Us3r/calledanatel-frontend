@@ -12,6 +12,7 @@ function Pagination({ currentPage, calledsPerPage, totalCalleds, paginate }) {
 
   return (
     <Container>
+      <span>Total de chamados: {totalCalleds}</span>
       <nav>
         <ul>
           {pageNumbers.map((number) => (
