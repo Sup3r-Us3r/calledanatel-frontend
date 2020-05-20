@@ -12,6 +12,7 @@ import { Container } from './styles';
 
 export default function Calleds() {
   const [loading, setLoading] = useState(false);
+  const [loaded, setLoaded] = useState(false);
   const [calleds, setCalleds] = useState([]);
 
   const [currentPage, setCurrentPage] = useState(1);
@@ -39,6 +40,7 @@ export default function Calleds() {
         }
 
         setLoading(false);
+        setLoaded(true);
 
         return setCalleds(protocols.data);
       } catch (err) {
@@ -65,9 +67,7 @@ export default function Calleds() {
 
   return (
     <Container>
-      {loading ? (
-        <Loading />
-      ) : (
+      {loaded ? (
         <>
           <CalledsTableData currentCalleds={currentCalleds} />
           <Pagination
@@ -77,6 +77,8 @@ export default function Calleds() {
             paginate={handlePaginate}
           />
         </>
+      ) : (
+        loading && <Loading />
       )}
     </Container>
   );
