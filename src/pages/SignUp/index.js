@@ -25,8 +25,8 @@ export default function SignUp() {
     e.preventDefault();
 
     const data = {
-      name: nameValue,
-      agent: agentValue,
+      name: nameValue.trim(),
+      agent: agentValue.trim(),
     };
 
     const formDataIsValid = await fieldValidation(data);
