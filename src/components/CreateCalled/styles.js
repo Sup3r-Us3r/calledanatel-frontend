@@ -23,7 +23,7 @@ export const ContainerButton = styled.div`
 `;
 
 export const ContainerBackgroundModal = styled.div`
-  z-index: 9999;
+  z-index: 1000;
   margin: auto;
   position: absolute;
   top: 0;
