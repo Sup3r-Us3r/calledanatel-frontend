@@ -3,8 +3,15 @@ import { darken } from 'polished';
 
 export const Container = styled.div`
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
+
+  span {
+    margin-top: 10px;
+    color: #6b7280;
+    font-size: 15px;
+    font-weight: bold;
+  }
 
   nav {
     ul {
